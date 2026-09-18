@@ -59,7 +59,7 @@ const artworks = [
     dimensions: '',
     image: '/152381.jpg.jpeg',
     description: '',
-    relatedImages: ['/152384.jpg.jpeg'],
+    relatedImages: ['/152384.jpg.jpeg', '152388.jpg.jpeg'],
   },
   {
     id: 10,

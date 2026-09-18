@@ -215,10 +215,6 @@ export default function Page() {
             alt="Detalhe de instalação artística no estúdio"
             className="w-full h-auto object-cover"
           />
-
-          <span className="mt-3 block text-xs text-neutral-500">
-            Stúdio Virgílio Design, 2026
-          </span>
         </div>
 
         <div className="flex flex-col">
@@ -298,13 +294,18 @@ export default function Page() {
               'Faculdade de Artes',
               'Luanda, Angola',
             ],
+            [
+              '2026',
+              'RETALHOS E MEMÓRIAS',
+              '82 Parris',
+              'EUA · 7 a 28 de agosto',
+            ],
           ].map(([year, title, place]) => (
             <div
               className="timeline-row"
               key={year}
             >
               <strong>{year}</strong>
-
               <div>
                 <h3 className="text-sm leading-snug md:text-lg">
                   {title}
