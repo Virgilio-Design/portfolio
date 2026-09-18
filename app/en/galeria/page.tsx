@@ -41,7 +41,7 @@ const artworks = [
     id: 4,
     title:
       'Portrait of former Kassav band member, Jacob Desvarieux, A4 size.',
-    year: '2024',
+    year: '2021',
     type: 'Portraits',
     material: 'Colored pencils',
     dimensions: '160 × 120 cm',
@@ -251,10 +251,10 @@ const artworks = [
   {
     id: 29,
     title:
-      'Presentation of a portrait to international footballer Bastos Quissanga, created with colored pencils, A3 size, in Kilamba.',
+      'Presentation of a portrait to international footballer Bastos Quissanga, A3 size, in Kilamba.',
     year: '',
     type: 'Personal',
-    material: '',
+    material: 'Graphite pencil',
     dimensions: '',
     image: '/27681.jpg.jpeg',
     description: '',

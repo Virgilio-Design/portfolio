@@ -39,7 +39,7 @@ const artworks = [
   {
     id: 4,
     title: 'Retrato do ex membro do grupo musical, Os Kassav,  Jacob Desvarieux, tamanho A4.',
-    year: '2024',
+    year: '2021',
     type: 'Retratos',
     material: 'Lápis de cor',
     dimensions: '160 × 120 cm',
@@ -229,10 +229,10 @@ const artworks = [
   },
   {
     id: 29,
-    title: 'Entrega do retrato ao Jogador Internacional, Bastos Quissanga, feito com lápis de cor no tamanho A3, na Cidade do Kilamba.',
+    title: 'Entrega do retrato ao Jogador Internacional, Bastos Quissanga, tamanho A3, na Cidade do Kilamba.',
     year: '',
     type: 'Pessoal',
-    material: '',
+    material: 'Lápis de grafite',
     dimensions: '',
     image: '/27681.jpg.jpeg',
     description: ''

@@ -65,7 +65,7 @@ const items = [
     city: 'EUA',
     dates: '7 a 28 de agosto',
     drawings: [
-      'A Profundidade de um Simples Toque',
+      'A Profundidade de um Simples Olhar',
       'Pare com Isto',
       'Estou Pronto',
       'Ainda Não É o Fim para Ti, Mulher',

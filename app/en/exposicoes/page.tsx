@@ -65,7 +65,7 @@ const items = [
     city: 'USA',
     dates: 'August 7 to 28',
     drawings: [
-      'The Depth of a Simple Touch',
+      'The Depth of a Simple Look',
       'Stop This',
       'I Am Ready',
       'It Is Not the End for You, Woman',
