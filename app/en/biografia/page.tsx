@@ -127,55 +127,6 @@ export default function Biography() {
                         </div>
                     </div>
                 </div>
-
-                <div className="sm:mt-0 mt-10">
-                    <h3 className="mb-8 text-2xl font-light tracking-wide text-neutral-900">
-                        EXHIBITIONS{' '}
-                        <span className="text-neutral-400">
-                            & WORKS
-                        </span>
-                    </h3>
-
-                    <div className="space-y-0">
-                        <div className="flex items-start justify-between gap-8 border-b border-neutral-200 py-6">
-                            <div>
-                                <h4 className="text-base font-medium text-neutral-900">
-                                    Scraps and Memories
-                                </h4>
-
-                                <p className="mt-1 text-sm leading-relaxed text-neutral-500">
-                                    82 Parris, USA · August 7–28, 2026
-                                </p>
-
-                                <p className="mt-4 text-sm leading-relaxed text-neutral-500">
-                                    Drawings:
-                                </p>
-
-                                <ul className="mt-2 space-y-1 text-sm leading-relaxed text-neutral-500">
-                                    <li>
-                                        “The Depth of a Simple Touch”
-                                    </li>
-                                    <li>
-                                        “Stop This”
-                                    </li>
-                                    <li>
-                                        “I Am Ready”
-                                    </li>
-                                    <li>
-                                        “It’s Not the End for You Yet, Woman”
-                                    </li>
-                                    <li>
-                                        “Protect Mother Africa”
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <span className="shrink-0 text-sm font-medium tracking-widest text-[#B89B5E]">
-                                2026
-                            </span>
-                        </div>
-                    </div>
-                </div>
             </section>
 
             <section className="section statement-section">

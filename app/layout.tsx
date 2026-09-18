@@ -9,9 +9,8 @@ const inter = Inter({ variable: '--font-inter', subsets: ['latin'], display: 'sw
 const googleSans = Google_Sans({ variable: '--font-google-sans', subsets: ['latin'], display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'Stúdio Virgílio Design',
-  description: 'Stúdio Virgílio Design — identidades, espaços e experiências com propósito.',
-  generator: 'v0.app',
+  title: 'Virgílio Design',
+  description: 'Virgílio Design — designer especializado em identidades visuais, espaços e experiências.',
   icons: {
     icon: [
       {

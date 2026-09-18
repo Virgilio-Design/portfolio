@@ -60,42 +60,46 @@ const exhibitions = [
 ]
 
 export function ArtworkCard({
-    artwork,
-    onOpen,
-    category,
-    className = '',
+  artwork,
+  onOpen,
+  category,
+  className = '',
 }: {
-    artwork: (typeof artworks)[number]
-    onOpen: () => void
-    category: string
-    className?: string
+  artwork: (typeof artworks)[number]
+  onOpen: () => void
+  category: string
+  className?: string
 }) {
-    return (
-        <button
-            className={`artwork-card group ${className}`}
-            onClick={onOpen}
-        >
-            <div className="artwork-image-wrap relative overflow-hidden">
-                <img
-                    src={artwork.image}
-                    className="transition-transform duration-500 group-hover:scale-105"
-                />
+  return (
+    <div className={className}>
+      <h3 className="mb-3 text-sm font-medium uppercase tracking-[0.15em] text-white">
+        {category}
+      </h3>
 
-                {/* Category preview */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/35">
-                    <div className="translate-y-3 rounded-full bg-white/95 px-5 py-2.5 text-xs uppercase tracking-[0.15em] text-neutral-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                        View {category}
-                        <ArrowUpRight
-                            size={14}
-                            className="ml-2 inline-block"
-                        />
-                    </div>
-                </div>
+      <button
+        className="artwork-card group w-full"
+        onClick={onOpen}
+      >
+        <div className="artwork-image-wrap relative overflow-hidden">
+          <img
+            src={artwork.image}
+            className="transition-transform duration-500 group-hover:scale-105"
+          />
+
+          {/* Preview da categoria */}
+          <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/35">
+            <div className="translate-y-3 rounded-full bg-white/95 px-5 py-2.5 text-xs uppercase tracking-[0.15em] text-neutral-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+              Ver {category}
+              <ArrowUpRight
+                size={14}
+                className="ml-2 inline-block"
+              />
             </div>
-
-            <div className="artwork-meta"></div>
-        </button>
-    )
+          </div>
+        </div>
+      </button>
+    </div>
+  )
 }
 
 export function SectionHeading({

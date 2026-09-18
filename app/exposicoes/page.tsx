@@ -1,13 +1,77 @@
-import { ArrowUpRight } from 'lucide-react'
-
 import { PageFrame } from '@/components/site-chrome'
 
 const items = [
-  ['2019', 'UNTITLED 02', 'Galeria Banco Económico', 'Luanda, Angola'],
-  ['2020/2021', 'FELIZ NATAL', 'Espaço ELA', 'Luanda, Angola'],
-  ['2021', 'ARTISTICAMENTE ART', 'Fundação Arte e Cultura', 'Luanda, Angola'],
-  ['2023', 'INSTINTO DE SOBREVIVÊNCIA', 'Shopping Avenida do Morro Bento', 'Luanda, Angola'],
-  ['2024', 'MUDANÇA DE PARADIGMA: UMA VISÃO RENASCENTISTA', 'Faculdade de Artes', 'Luanda, Angola'],
+  {
+    year: '2019',
+    title: 'UNTITLED 02',
+    place: 'Galeria Banco Económico',
+    city: 'Luanda, Angola',
+    dates: '25 de junho a 30 de agosto',
+    drawings: [
+      'Olhando para o Amanhã',
+      'A Melhor Fase',
+      'Foco',
+      'Sorrisos Verdadeiros',
+      'Firmeza',
+    ],
+  },
+  {
+    year: '2020/2021',
+    title: 'FELIZ NATAL',
+    place: 'Espaço ELA',
+    city: 'Luanda, Angola',
+    dates: '2 de dezembro a 25 de janeiro',
+    drawings: [
+      'Protege a Mãe África',
+      'A Lenda — Kobe Bryant',
+    ],
+  },
+  {
+    year: '2021',
+    title: 'ARTISTICAMENTE ART',
+    place: 'Fundação Arte e Cultura',
+    city: 'Luanda, Angola',
+    dates: '31 de julho a 15 de agosto',
+    drawings: [
+      'Super Limpo',
+    ],
+  },
+  {
+    year: '2023',
+    title: 'INSTINTO DE SOBREVIVÊNCIA',
+    place: 'Shopping Avenida do Morro Bento',
+    city: 'Luanda, Angola',
+    dates: '4 a 28 de outubro',
+    drawings: [
+      'Instinto de Sobrevivência',
+    ],
+  },
+  {
+    year: '2024',
+    title: 'MUDANÇA DE PARADIGMA: UMA VISÃO RENASCENTISTA',
+    place: 'Faculdade de Artes',
+    city: 'Luanda, Angola',
+    dates: '5 de julho',
+    drawings: [
+      'A Profundidade de um Simples Olhar',
+      'Pare com Isto',
+      'Estou Pronto',
+    ],
+  },
+  {
+    year: '2026',
+    title: 'RETALHOS E MEMÓRIAS',
+    place: '82 Parris',
+    city: 'EUA',
+    dates: '7 a 28 de agosto',
+    drawings: [
+      'A Profundidade de um Simples Toque',
+      'Pare com Isto',
+      'Estou Pronto',
+      'Ainda Não É o Fim para Ti, Mulher',
+      'Protege a Mãe África',
+    ],
+  },
 ]
 
 export default function Exposicoes() {
@@ -18,7 +82,7 @@ export default function Exposicoes() {
           <img
             src="/27604.jpg.jpeg"
             alt=""
-            />
+          />
 
           <div className="hero-caption">
             <h1>Exposições</h1>
@@ -27,32 +91,31 @@ export default function Exposicoes() {
       </section>
 
       <section className="section page-list">
-        {items.map(([year, title, place, city]) => (
-          <div className="exhibition-row" key={title}>
-            <strong>{year}</strong>
+        {items.map((item) => (
+          <div className="exhibition-row" key={`${item.year}-${item.title}`}>
+            <strong>{item.year}</strong>
+
             <div>
-              <h3>{title}</h3>
-              <p>{place} · {city}</p>
+              <h3>{item.title}</h3>
+
+              <p>
+                {item.place} · {item.city}
+              </p>
+
+              <p>{item.dates}</p>
+
+              <div className="mt-4">
+                <p>Desenhos:</p>
+
+                <ul className="mt-2 space-y-1">
+                  {item.drawings.map((drawing) => (
+                    <li key={drawing}>“{drawing}”</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         ))}
-
-        <div className="exhibition-row" key="SCRAPS AND MEMORIES">
-          <strong>2026</strong>
-          <div>
-            <h3>RETALHOS E MEMÓRIAS</h3>
-            <p>82 Parris, EUA · 7 a 28 de agosto</p>
-
-            <p className="mt-4">Desenhos:</p>
-            <ul className="mt-2 space-y-1">
-              <li>“A profundidade de um simples toque”</li>
-              <li>“Pare com isto”</li>
-              <li>“Estou pronto”</li>
-              <li>“Ainda não é o fim para ti, mulher”</li>
-              <li>“Protege a Mãe África”</li>
-            </ul>
-          </div>
-        </div>
       </section>
     </PageFrame>
   )

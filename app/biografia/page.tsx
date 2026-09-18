@@ -97,43 +97,6 @@ export default function Biografia() {
                         </div>
                     </div>
                 </div>
-
-                <div className='sm:mt-0 mt-10'>
-                    <h3 className="mb-8 text-2xl font-light tracking-wide text-neutral-900 ">
-                        EXPOSIÇÕES {" "}
-                        <span className="text-neutral-400">E OBRAS</span>
-                    </h3>
-
-                    <div className="space-y-0">
-                        <div className="flex items-start justify-between gap-8 border-b border-neutral-200 py-6">
-                            <div>
-                                <h4 className="text-base font-medium text-neutral-900">
-                                    Fragmentos e Memórias
-                                </h4>
-
-                                <p className="mt-1 text-sm leading-relaxed text-neutral-500">
-                                    82 Parris, Estados Unidos · 7 a 28 de agosto de 2026
-                                </p>
-
-                                <p className="mt-4 text-sm leading-relaxed text-neutral-500">
-                                    Desenhos:
-                                </p>
-
-                                <ul className="mt-2 space-y-1 text-sm leading-relaxed text-neutral-500">
-                                    <li>“A profundidade de um simples toque”</li>
-                                    <li>“Pare com isto”</li>
-                                    <li>“Estou pronto”</li>
-                                    <li>“Ainda não é o fim para ti, mulher”</li>
-                                    <li>“Proteja a Mãe África”</li>
-                                </ul>
-                            </div>
-
-                            <span className="shrink-0 text-sm font-medium tracking-widest text-[#B89B5E]">
-                                2026
-                            </span>
-                        </div>
-                    </div>
-                </div>
             </section>
 
             <section className="section statement-section ">
