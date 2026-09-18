@@ -13,9 +13,17 @@ const items = [
 export default function Exposicoes() {
   return (
     <PageFrame>
-      <section className="inner-hero">
-        <h1>Exposições</h1>
-        <p>Projetos e colaborações que ganham forma em diferentes contextos.</p>
+      <section id="inicio" className="hero-section galeria">
+        <div className="hero-image">
+          <img
+            src="/27604.jpg.jpeg"
+            alt=""
+            />
+
+          <div className="hero-caption">
+            <h1>Exposições</h1>
+          </div>
+        </div>
       </section>
 
       <section className="section page-list">
