@@ -3,7 +3,7 @@
 import { PageFrame } from '@/components/site-chrome'
 import { ArrowDown, ArrowLeft, ArrowRight, X } from 'lucide-react'
 import { useSearchParams } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 
 const artworks = [
   {
@@ -301,7 +301,7 @@ function ArtworkCard({
   )
 }
 
-export default function Gallery() {
+function GalleryContent() {
   const [selected, setSelected] = useState<number | null>(null)
   const searchParams = useSearchParams()
   const tipo = searchParams.get('tipo')
@@ -541,5 +541,13 @@ export default function Gallery() {
         </div>
       )}
     </PageFrame>
+  )
+}
+
+export default function Gallery() {
+  return (
+    <Suspense fallback={null}>
+      <GalleryContent />
+    </Suspense>
   )
 }
